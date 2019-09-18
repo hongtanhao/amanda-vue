@@ -1,6 +1,6 @@
-## amanda-vue
-
-> A Vue.js project
+>>> amanda-vue
+>>>>>> 基于vue来实现一套自己偏爱的实用性组件库
+>>>>>> [查看文档戳这]()
 
 ## Build Setup
 
@@ -18,6 +18,6 @@ npm run build
 npm run build --report
 ```
 
-## 使用vuepress 来撰写文档
+## 使用vuepress来撰写文档
 [vuepress教程](https://vuepress.vuejs.org/)
 
