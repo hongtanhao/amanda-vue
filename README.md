@@ -1,6 +1,6 @@
 >>> amanda-vue
 >>>>>> 基于vue来实现一套自己偏爱的实用性组件库
->>>>>> [查看文档戳这](https://github.com/hongtanhao/amanda-vue-docs/index.html)
+>>>>>> [查看文档戳这](https://github.com/hongtanhao/amanda-vue-docs/)
 
 ## Build Setup
 
