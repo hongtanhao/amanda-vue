@@ -1,0 +1,18 @@
+{
+  "deep_red": "#d81e06",
+  "thin_yellow":"#f4ea2a",
+  "shallow_green": "#1afa29",
+  "azure_blue": "#1296db",
+  "deep_blue": "#13227a",
+  "magneta": "#d4237a",
+  "pure_white": "#ffffff",
+  "pure_black": "#000000",
+  "gray_level0": "#2c2c2c",
+  "gray_level1": "#515151",
+  "gray_level2": "#707070",
+  "gray_level3": "#8a8a8a",
+  "gray_level4": "#bfbfbf",
+  "gray_level5": "#cdcdcd",
+  "gray_level6": "#dbdbdb",
+  "gray_level7": "#e6e6e6"
+}

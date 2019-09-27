@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/',
+  base: '/amanda-vue-docs',
   title: 'AmandaVue',
   ga: 'UA-85991013-5',
   description: '打造一套属于自己的装备',
@@ -23,8 +23,8 @@ module.exports = {
               link: '/art/',
           },
           {
-              text: 'MyBlog',
-              link: '/donate/'
+              text: '王小峰的博客',
+              link: 'https://hongtanhao.github.io/'
           },
           {
               text: '关于',
@@ -33,7 +33,8 @@ module.exports = {
       ],
       sidebar: {
           '/art/': [
-              ''
+              'install',
+              'a'
           ]
       }
   }

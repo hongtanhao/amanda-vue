@@ -9,4 +9,18 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
+  <script src="https://cloud9ide.github.io/emmet-core/emmet.js"></script>
+  <script src="/static/lib/ace/ace.js"></script>
+  <script src="/static/lib/ace/ext-emmet.js"></script>
+  <script src="/static/lib/ace/theme-xcode.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/static/lib/ace/mode-javascript.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/static/lib/ace/mode-html.js" type="text/javascript" charset="utf-8"></script>
+  <script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/xcode");
+    var JavaScriptMode = ace.require("ace/mode/html").Mode;
+    editor.session.setMode(new JavaScriptMode());
+    editor.setOption("enableEmmet", true);
+    console.log('[editor]==', editor)
+</script>
 </html>

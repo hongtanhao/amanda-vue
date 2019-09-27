@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /amanda-vue-docs/logo.png
 actionText: 开始阅读
 actionLink: /art/
 features:

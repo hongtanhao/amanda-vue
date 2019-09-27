@@ -1,0 +1,109 @@
+// grid -> ama-col
+
+.ama-col-base {
+  display: inline-block;
+  min-height: $RowMinH;
+  line-height: $LineHeight;
+  font-size: 1rem;
+}
+
+// ama-a 
+.ama-a {
+  text-decoration: none;
+  opacity: .6;
+  color: $GRtextColor;
+}
+
+.ama-a:any-link {
+  color: $GRtextColor;
+}
+
+.ama-a:hover,.ama-a:active{
+  opacity: 1;
+  color: $MLbackgroundColor;
+}
+// .ama-a:visited {
+// }
+
+
+// ama-item horizontal vertical
+.ama-item {
+  padding: 0 1.5rem;
+  cursor: pointer;
+  opacity: .7;
+}
+.ama-item-horizontal {
+  display: inline-block;
+}
+.ama-item-vertical {
+  display: block;
+} 
+.ama-item:hover{
+  opacity: 1;
+  color: #000;
+}
+
+// ama-divider
+.ama-divider {
+  display: inline-block;
+  margin: auto;
+}
+.ama-divider-line {
+  height: 1px;
+}
+.ama-divider-bar {
+  height: 10px
+}
+
+// ama-scroller
+.ama-scroller {
+  overflow: hidden;
+}
+.ama-scroller-x {
+  overflow-x: scroll;
+}
+.ama-scroller-y {
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $MLbackgroundColor;
+}
+
+
+// ama-button
+.ama-button {
+  outline: none;
+  border: none;
+  padding: .65rem 1rem;
+  border-radius: 4px;
+  background-color: $MLbackgroundColor;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+// ama-tabs
+.ama-tabs > span{
+  padding: 0 1rem;
+  // border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  color: $GRtextColor;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+}
+
+.ama-tabs-activated {
+  color: #ffffff;
+  border: 1px solid transparent;
+  border-bottom-color: $MLbackgroundColor;
+  background-color: $MLbackgroundColor;
+}
