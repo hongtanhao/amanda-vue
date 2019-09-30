@@ -32,7 +32,7 @@ module.exports = {
           }
       ],
       sidebar: {
-          '/art/': [
+          '/art/m/': [
               'install',
               'a'
           ]

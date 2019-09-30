@@ -18,7 +18,7 @@
           <div style="margin: 0 2rem; verticalAlign: center" class="side-nav" ref="ama-com">
             <ama-scroller height="800" scroll="Y" >
               <ama-row>
-                <ama-col offset="8" span="4" align="right">
+                <ama-col span="23" align="right">
                   <ama-tabs @amaTabsClicked="toggle" :tabs="tabs"></ama-tabs>
                 </ama-col>
               </ama-row>

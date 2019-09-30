@@ -1,9 +1,8 @@
 import create from '@/utils/create'
-import { winClientWidth } from '@/utils'
 export default function () {
   // 行
   create('ama-row', {
-    template: `<div style="width: ${winClientWidth};fontSize: 0;"><slot/></slot></div>`
+    template: `<div style="width: 100%;fontSize: 0;"><slot></slot></div>`
   })
   // 列
   create('ama-col', {
@@ -21,19 +20,19 @@ export default function () {
       }
     },
     mounted () {
-      this.$refs['ama-col'].style.width = this._width + 'px'
-      this.$refs['ama-col'].style.paddingLeft = this._offset + 'px'
+      this.$refs['ama-col'].style.width = this._width + '%'
+      this.$refs['ama-col'].style.paddingLeft = this._offset + '%'
       this.$refs['ama-col'].style.textAlign = this.align
       this.$refs['ama-col'].style.verticalAlign = 'top'
     },
     computed: {
       _width: {
         get: function () {
-          return this.span * (1 / 24) * winClientWidth
+          return this.span * (100 / 24)
         }
       },
       _offset () {
-        return this.offset * (1 / 24) * winClientWidth
+        return this.offset * (100 / 24)
       }
     },
     methods: {
