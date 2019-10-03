@@ -6,7 +6,9 @@
       "color": "",
       "activateColor": "#",
       "url": "https://hongtanhao.github.io/",
-      "size": "1rem"
+      "size": "1.5rem",
+      "fontClass": "icon-icon-test12",
+      "unicode": "&#xe63f;"
     }
   },
   {
@@ -16,7 +18,9 @@
       "color": "",
       "activateColor": "",
       "url": "https://github.com/hongtanhao",
-      "size": "1rem"
+      "size": "1.5rem",
+      "fontClass": "icon-icon-test76",
+      "unicode": "&#xe67f;"
     }
   },
   {
@@ -26,7 +30,9 @@
       "color": "",
       "activateColor": "",
       "url": "",
-      "size": "1rem"
+      "size": "1.5rem",
+      "fontClass": "icon-icon-test15",
+      "unicode": "&#xe642;"
     }
   }
 ]

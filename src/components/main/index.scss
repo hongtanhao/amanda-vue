@@ -14,6 +14,15 @@
   color: $GRtextColor;
 }
 
+// ama-icon
+.ama-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
 .ama-a:any-link {
   color: $GRtextColor;
 }

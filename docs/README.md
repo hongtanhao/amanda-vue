@@ -2,7 +2,7 @@
 home: true
 heroImage: /amanda-vue-docs/logo.png
 actionText: 开始阅读
-actionLink: /art/
+actionLink: /art/m/
 features:
     - title: 多学习
       details: 尘世浮躁，保持一额淡静好学的心，实在宝贵。

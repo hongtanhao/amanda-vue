@@ -2,7 +2,11 @@ import create from '@/utils/create'
 export default function () {
   create('ama-icon', {
     name: 'ama-icon',
-    template: '<span ref="ama-icon-span"><ama-a :href="iconC.url" :text="iconC.text"></ama-a></span>',
+    template: `<a class="ama-a" ref="icon-a"> 
+                <span ref="ama-icon-span" @click="handleClicked">
+                  <span :class="iconClass" ref="ama-icon">{{ this.icon.fontClass ? "" : icon.unicode }}</span>
+                </span>
+              </a>`,
     props: {
       icon: {
         type: Object
@@ -13,6 +17,21 @@ export default function () {
         iconC: this.icon
       }
     },
+    computed: {
+      iconClass () {
+        if (this.icon.fontClass) {
+          return 'ama-icon iconfont ' + this.icon.fontClass
+        } else if (this.icon.unicode) {
+          return 'ama-icon iconfont'
+        } else {
+          return ''
+        }
+      }
+    },
+    mounted () {
+      this.$refs['ama-icon'].style.fontSize = this.iconC.size
+      this.$refs['icon-a'].href = this.iconC.url
+    },
     watch: {
       iconC: {
         deep: true,
@@ -21,9 +40,10 @@ export default function () {
         }
       }
     },
-    mounted () {
-    },
     methods: {
+      handleClicked () {
+        Window.open(this.icon.href)
+      }
     }
   })
 }

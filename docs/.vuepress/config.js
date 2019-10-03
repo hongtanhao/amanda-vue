@@ -20,7 +20,7 @@ module.exports = {
       sidebarDepth: 3,
       nav: [{
               text: '正文',
-              link: '/art/',
+              link: '/art/m/',
           },
           {
               text: '王小峰的博客',
@@ -34,7 +34,9 @@ module.exports = {
       sidebar: {
           '/art/m/': [
               'install',
-              'a'
+              'a',
+              'divider',
+              'icon'
           ]
       }
   }

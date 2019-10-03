@@ -15,9 +15,6 @@
       <h4>用途</h4>
       <p>页面icon, 并且带链接功能</p>
       <h4>怎么用</h4>
-      <p>
-        <ama-a href="http://localhost:8081/amanda-vue-docs/art/m/icon.html" text="戳这啊"></ama-a>
-      </P>
       <h4>效果如下</h4>
       <ul class="icon-ul">
         <p>1. 以class方式使用</p>
@@ -25,7 +22,6 @@
           <ama-icon :icon="item.icon"></ama-icon>
         </li>
         <p>2. 以unicode方式使用</p>
-        <p>暂时不支持</p>
       </ul>
       <h4>组件源码</h4>
       <p>

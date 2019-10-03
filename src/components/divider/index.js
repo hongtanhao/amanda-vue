@@ -13,7 +13,7 @@ export default function () {
       height: {
         type: String
       },
-      color: {
+      bgColor: {
         type: String
       }
     },
@@ -23,10 +23,10 @@ export default function () {
       }
     },
     mounted () {
-      let {height, width, color} = this
+      let {height, width, bgColor} = this
       let curEle = this.$refs['ama-divider']
-      curEle.style.backgroundColor = color
-      curEle.style.width = width
+      curEle.style.backgroundColor = bgColor
+      curEle.style.width = width > 1 ? (width + 'px') : width
       curEle.style.height = height + 'px'
     }
   })

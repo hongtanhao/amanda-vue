@@ -1,7 +1,7 @@
 <template>
   <div>
     <ama-header/>
-    <ama-divider :color="color" width="100%" type='line'></ama-divider>
+    <ama-divider :bgColor="color" width="100%" type='line'></ama-divider>
     <ama-divider width="100%" height="40" type='block'></ama-divider>
     <ama-container></ama-container>
     <ama-divider width="100%" height="10" type='block'></ama-divider>

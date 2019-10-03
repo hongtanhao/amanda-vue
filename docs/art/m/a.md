@@ -1,6 +1,6 @@
 # a 链接
 
-## 在vue的SPA中这样用：
+## 在vue的单页面中这样用：
 ```bash
 npm install amav --S 
 ```

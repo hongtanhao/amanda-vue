@@ -18,11 +18,11 @@
           <div style="margin: 0 2rem; verticalAlign: center" class="side-nav" ref="ama-com">
             <ama-scroller height="800" scroll="Y" >
               <ama-row>
-                <ama-col span="23" align="right">
+                <ama-col span="24" align="right">
                   <ama-tabs @amaTabsClicked="toggle" :tabs="tabs"></ama-tabs>
                 </ama-col>
               </ama-row>
-              <ama-divider color="#ccc" width="100%" type='line'></ama-divider>
+              <ama-divider bgColor="#ccc" width="100%" type='line'></ama-divider>
               <div v-show="mode === 'demo'" style="padding: 2rem">
                 <component ref="mycom" :is="currentCom"></component>
               </div>
@@ -74,10 +74,13 @@ export default {
       this.doc = await RQ.get('/amasVuFile/read', {comN: comN})
       console.log('this.doc===', this.doc)
     },
-    handleClick (nav) {
+    async handleClick (nav) {
       this.currentCom = nav.component.default
       this.selectedCom = nav.comName
-      this.getDoc(this.selectedCom)
+      await this.getDoc(this.selectedCom)
+      this.$nextTick(() => {
+        this.setValue()
+      })
     },
     setTextToCurrentCompo (value) {
       let domC = this.$refs['mycom']
