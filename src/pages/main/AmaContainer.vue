@@ -1,40 +1,41 @@
 <template>
   <div class="container">
-      <ama-row>
-        <ama-col offset="2" span="4" align="left">
-          <div class="side-nav">
-            <ama-navigator>
-              <ama-nav-item v-for="(item, index) in sideNavs"
-                :key="index"
-                :item="item"
-                orientation="vertical"
-                @amaNavItemClick="handleClick(item)">
-                <ama-a href="#" :text="item.comName"></ama-a>
-              </ama-nav-item>
-            </ama-navigator>
-          </div>
-        </ama-col>
-        <ama-col span="14" align="left">
-          <div style="margin: 0 2rem; verticalAlign: center" class="side-nav" ref="ama-com">
-            <ama-scroller height="800" scroll="Y" >
-              <ama-row>
-                <ama-col span="24" align="right">
-                  <ama-tabs @amaTabsClicked="toggle" :tabs="tabs"></ama-tabs>
-                </ama-col>
-              </ama-row>
-              <ama-divider bgColor="#ccc" width="100%" type='line'></ama-divider>
-              <div v-show="mode === 'demo'" style="padding: 2rem">
-                <component ref="mycom" :is="currentCom"></component>
-              </div>
-              <pre id="editor" v-show="mode === 'code'" ref="code">
-              </pre>
-            </ama-scroller>
-          </div>
-        </ama-col>
-        <ama-col span="2" align="left">
-          tag
-        </ama-col>
-      </ama-row>
+    <ama-loader v-if="isShowLoader"></ama-loader>
+    <ama-row>
+      <ama-col offset="2" span="3.5" align="left">
+        <div class="side-nav">
+          <ama-navigator>
+            <ama-nav-item v-for="(item, index) in sideNavs"
+              :key="index"
+              :item="item"
+              orientation="vertical"
+              @amaNavItemClick="handleClick(item)">
+              <ama-a href="#" :text="item.alias"></ama-a>
+            </ama-nav-item>
+          </ama-navigator>
+        </div>
+      </ama-col>
+      <ama-col span="14" align="left">
+        <div style="margin: 0 2rem; verticalAlign: center" class="side-nav" ref="ama-com">
+          <ama-scroller height="800" scroll="Y" >
+            <ama-row>
+              <ama-col span="24" align="right">
+                <ama-tabs @amaTabsClicked="toggle" :tabs="tabs"></ama-tabs>
+              </ama-col>
+            </ama-row>
+            <ama-divider bgColor="#ccc" width="100%" type='line'></ama-divider>
+            <div v-show="mode === 'demo'" style="padding: 2rem">
+              <component ref="mycom" :is="currentCom"></component>
+            </div>
+            <pre id="editor" v-show="mode === 'code'" ref="code">
+            </pre>
+          </ama-scroller>
+        </div>
+      </ama-col>
+      <ama-col span="2" align="left">
+        tag
+      </ama-col>
+    </ama-row>
   </div>
 </template>
 <script>
@@ -52,6 +53,7 @@ export default {
       mode: 'demo',
       doc: '',
       selectedCom: 'readme',
+      isShowLoader: true,
       tabs: [{
         id: '1',
         text: '示例效果'
@@ -65,13 +67,18 @@ export default {
   },
   async created () {
     this.getDoc(this.selectedCom)
+   
   },
   mounted () {
   },
   methods: {
     async getDoc (comN) {
+      this.isShowLoader = true
       let RQ = RequestHelper(this)
       this.doc = await RQ.get('/amasVuFile/read', {comN: comN})
+      setTimeout(() => {
+        this.isShowLoader = false
+      }, 500);
       console.log('this.doc===', this.doc)
     },
     async handleClick (nav) {

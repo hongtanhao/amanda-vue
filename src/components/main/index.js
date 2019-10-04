@@ -8,6 +8,8 @@ import progress from '../progress'
 import scroller from '../scroller'
 import button from '../button'
 import tabs from '../tabs'
+import mavonEditor from '../mavon-editor'
+import loader from '../loader'
 
 export default {
   Grid,
@@ -19,5 +21,7 @@ export default {
   progress,
   scroller,
   button,
-  tabs
+  tabs,
+  mavonEditor,
+  loader
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/amanda-vue-docs',
+  base: '/amanda-vue-docs/',
   title: 'AmandaVue',
   ga: 'UA-85991013-5',
   description: '打造一套属于自己的装备',
@@ -36,7 +36,9 @@ module.exports = {
               'install',
               'a',
               'divider',
-              'icon'
+              'icon',
+              'tabs',
+              'button'
           ]
       }
   }

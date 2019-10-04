@@ -30,13 +30,13 @@
 ### 核心技术栈
 
 - 理解 javascript 运行原理，设计模式以及经典算法和 nodejs 等
-- 熟练使用工程化脚手架，也能从零搭建工程基本模板和发布 npm 包
+- 熟练使用工程化脚手架，并能从零搭建工程模板和发布 npm 包以及集成第三方插件等
 - 掌握并熟练使用前端`vue、react以及其全家桶`等前端主流框架
 - 具有全端开发经验（pc 端、移动端、各种小程序）等
 - 后端语言会 php 和 java， 且有用之开发后台接口之实战经验
 - 理解并能快速上手 java 优秀框架（spring/springMVC/springBoot）
 - 熟练 mysql、常用 sql 语句和库表设计，mongoDB，redis 等数据库
-- 自己搭建开发环境，撰写 restfull 风格接口，使用 maven 或 gradle 打包发布等
+- 自己搭建开发环境，编写 restfull 风格web接口，使用 maven 或 gradle 打包发布等
 - 熟练 linuxOS 和常用指令
 
 ### 个人作品
