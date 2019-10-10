@@ -8,3 +8,17 @@
 html, body {
   overflow: hidden;
 }
+.opt-h4 {
+  color: hsla(177, 88%, 27%, 0.5);
+  transition: all 2s;
+  animation: h4-show 3s;
+}
+
+@keyframes h4-show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -5,6 +5,12 @@
       <br>
     </header>
     <section>
+      <h4 class="opt-h4">See my show</h4>
+      <ama-tabs @amaTabsClicked="toggle" :tabs="tabs"></ama-tabs>
+      <p>{{ text }}</p>
+    </section>  
+    <section>
+      <h4 class="opt-h4">See your show</h4>
       <h4>用途</h4>
       <p>
         具选项卡功能
@@ -13,9 +19,6 @@
       <p>
         <ama-a href="http://localhost:8081/amanda-vue-docs/art/m/tabs.html" text="戳这啊"></ama-a>
       </P>
-      <h4>效果如下</h4>
-      <ama-tabs @amaTabsClicked="toggle" :tabs="tabs"></ama-tabs>
-      <p>{{ text }}</p>
       <h4>组件源码</h4>
       <p>
         <ama-a href="https://github.com/hongtanhao/amanda-vue/blob/dev/src/components/tabs/index.js" text="<ama-tabs>组件源码"></ama-a>

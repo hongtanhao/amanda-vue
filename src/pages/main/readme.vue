@@ -9,9 +9,11 @@
     </ul>
     <h5>参考文档</h5>
     <ul>
+      <li><ama-a href="https://cn.vuejs.org/" text="vue官网"></ama-a></li>
       <li><ama-a href="https://ant.design/index-cn" text="Ant Design"></ama-a></li>
       <li><ama-a href="https://element.eleme.cn/#/zh-CN" text="Element"></ama-a></li>
       <li><ama-a href="https://youzan.github.io/vant/#/zh-CN/intro" text="Vant"></ama-a></li>
+      <li><ama-a href="https://github.com/hongtanhao/vue-element-admin" text="vue-element-admin"></ama-a></li>
       <li><ama-a href="https://hongtanhao.github.io/" text="个人博客"></ama-a></li>
     </ul>
   </div>

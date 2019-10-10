@@ -1,4 +1,4 @@
-import Grid from '../grid'
+import grid from '../grid'
 import a from '../a'
 import navigator from '../navigator'
 import navItem from '../nav-item'
@@ -10,9 +10,12 @@ import button from '../button'
 import tabs from '../tabs'
 import mavonEditor from '../mavon-editor'
 import loader from '../loader'
+import iconSvg from '../icon-svg'
+import pdf from '../pdf'
+import echarts from '../echarts'
 
 export default {
-  Grid,
+  grid,
   a,
   navigator,
   navItem,
@@ -23,5 +26,8 @@ export default {
   button,
   tabs,
   mavonEditor,
-  loader
+  loader,
+  iconSvg,
+  pdf,
+  echarts
 }

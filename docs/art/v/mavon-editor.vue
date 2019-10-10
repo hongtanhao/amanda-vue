@@ -5,6 +5,15 @@
       <br>
     </header>
     <section>
+      <h4 class="opt-h4">See my show</h4>
+      <div>
+        <ama-mavon-editor 
+          :value="value">
+        </ama-mavon-editor>
+      </div>
+    </section>
+    <section>
+      <h4 class="opt-h4">See your show</h4>
       <h4>需知</h4>
       <p>
         本组件引用了<ama-a href="https://github.com/hinesboy/mavonEditor" text="mavon-editor"></ama-a>， 然后加以封装
@@ -15,12 +24,6 @@
       <p>
         <ama-a href="https://github.com/hinesboy/mavonEditor" text="戳这啊"></ama-a>
       </P>
-      <h4>效果如下</h4>
-      <div>
-        <ama-mavon-editor 
-          :value="value">
-        </ama-mavon-editor>
-      </div>
       <h4>组件源码</h4>
       <p>
         <ama-a href="https://github.com/hongtanhao/amanda-vue/blob/dev/src/components/mavon-editor/index.js" text="<ama-icon>组件源码"></ama-a>

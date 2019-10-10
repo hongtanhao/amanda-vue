@@ -1,10 +1,26 @@
 <template>
   <div>
     <header>
-      <h3>icon 小图标</h3>
+      <h3>icon 具有链接效果的小图标</h3>
       <br>
     </header>
     <section>
+      <h4 class="opt-h4">See my show</h4>
+      <ul class="icon-ul">
+        <p>1. 以class方式使用</p>
+        <li v-for="(item, index) in fontClass" :key="index">
+          <ama-icon :icon="item.icon"></ama-icon>
+        </li>
+      </ul>
+      <ul class="icon-ul">
+        <p>2. 以unicode方式使用</p>
+        <li v-for="(item2, index2) in unicodes" :key="index2">
+          <ama-icon :icon="item2.icon"></ama-icon>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h4 class="opt-h4">See your show</h4>
       <h4>需知</h4>
       <p>
         本组件引用了阿里巴巴的<ama-a href="https://www.iconfont.cn/" text="iconfont"></ama-a>， 然后加以封装
@@ -18,15 +34,6 @@
       <p>
         <ama-a href="http://localhost:8081/amanda-vue-docs/art/m/icon.html" text="戳这啊"></ama-a>
       </P>
-      <h4>效果如下</h4>
-      <ul class="icon-ul">
-        <p>1. 以class方式使用</p>
-        <li v-for="(item, index) in blogs" :key="index">
-          <ama-icon :icon="item.icon"></ama-icon>
-        </li>
-        <p>2. 以unicode方式使用</p>
-        <p>暂时不支持</p>
-      </ul>
       <h4>组件源码</h4>
       <p>
         <ama-a href="https://github.com/hongtanhao/amanda-vue/blob/dev/src/components/icon/index.js" text="<ama-icon>组件源码"></ama-a>
@@ -39,7 +46,7 @@ export default {
   name: 'a-demo',
   data () {
     return {
-      blogs: [
+      fontClass: [
         { 
           id: "1",
           icon: {
@@ -49,7 +56,7 @@ export default {
             url: "",
             size: "1.5rem",
             fontClass: "icon-icon-test12",
-            unicode: "&#xe63f;"
+            unicode: ""
           }
         },
         {
@@ -61,7 +68,7 @@ export default {
             url: "",
             size: "1.5rem",
             fontClass: "icon-icon-test76",
-            unicode: "&#xe67f;"
+            unicode: ""
           }
         },
         {
@@ -73,7 +80,7 @@ export default {
             url: "",
             size: "1.5rem",
             fontClass: "icon-icon-test15",
-            unicode: "&#xe642;"
+            unicode: ""
           }
         },
         {
@@ -85,7 +92,7 @@ export default {
             url: "",
             size: "1.5rem",
             fontClass: "icon-icon-test16",
-            unicode: ";"
+            unicode: ""
           }
         },
         {
@@ -97,7 +104,81 @@ export default {
             url: "",
             size: "1.5rem",
             fontClass: "icon-icon-test17",
-            unicode: ";"
+            unicode: ""
+          }
+        },
+        {
+          id: "6",
+          icon: {
+            text: "Setting",
+            color: "",
+            activateColor: "",
+            url: "",
+            size: "1.5rem",
+            fontClass: "icon-icon-test170",
+            unicode: ""
+          }
+        }
+      ],
+      unicodes: [
+        { 
+          id: "1",
+          icon: {
+            text: "Blog",
+            color: "",
+            activateColor: "#",
+            url: "",
+            size: "1.5rem",
+            fontClass: "",
+            unicode: "&#xe63f;"
+          }
+        },
+        {
+          id: "2",
+          icon: {
+            text: "Github",
+            color: "",
+            activateColor: "",
+            url: "",
+            size: "1.5rem",
+            fontClass: "",
+            unicode: "&#xe67f;"
+          }
+        },
+        {
+          id: "3",
+          icon: {
+            text: "Setting",
+            color: "",
+            activateColor: "",
+            url: "",
+            size: "1.5rem",
+            fontClass: "",
+            unicode: "&#xe642;"
+          }
+        },
+        {
+          id: "4",
+          icon: {
+            text: "Setting",
+            color: "",
+            activateColor: "",
+            url: "",
+            size: "1.5rem",
+            fontClass: "",
+            unicode: "&#xe642;"
+          }
+        },
+        {
+          id: "5",
+          icon: {
+            text: "Setting",
+            color: "",
+            activateColor: "",
+            url: "",
+            size: "1.5rem",
+            fontClass: "",
+            unicode: "&#xe642;"
           }
         }
       ]

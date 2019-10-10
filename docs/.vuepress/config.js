@@ -38,7 +38,9 @@ module.exports = {
               'divider',
               'icon',
               'tabs',
-              'button'
+              'button',
+              'pdf',
+              'echarts'
           ]
       }
   }

@@ -3,7 +3,8 @@ let amaNames = [{
   comName: 'a',
   alias: 'a 链接',
   component: require('../../docs/art/v/a')
-}, {
+},
+{
   href: 'nav-item',
   comName: 'nav-item',
   alias: 'nav-item 导航项容器',
@@ -14,12 +15,20 @@ let amaNames = [{
   comName: 'divider',
   alias: 'divider 分割器',
   component: require('../../docs/art/v/divider')
-}, {
+},
+{
   href: 'icon',
   comName: 'icon',
   alias: 'icon 小图标',
   component: require('../../docs/art/v/icon')
-}, {
+},
+{
+  href: 'icon-svg',
+  comName: 'icon-svg',
+  alias: 'icon-svg 雪碧图',
+  component: require('../../docs/art/v/icon-svg')
+},
+{
   href: 'grid',
   comName: 'grid',
   alias: 'grid 网格布局',
@@ -36,8 +45,7 @@ let amaNames = [{
   comName: 'mavon-editor',
   alias: 'mavon-editor 文本编辑器',
   component: require('../../docs/art/v/mavon-editor')
-},
-{
+}, {
   href: 'tabs',
   comName: 'tabs',
   alias: 'tabs 选项卡',
@@ -54,6 +62,18 @@ let amaNames = [{
   comName: 'button',
   alias: 'button 美化按钮',
   component: require('../../docs/art/v/button')
+},
+{
+  href: 'pdf',
+  comName: 'pdf',
+  alias: 'pdf dom转pdf',
+  component: require('../../docs/art/v/pdf')
+},
+{
+  href: 'echarts',
+  comName: 'echarts',
+  alias: 'echarts 数据可视化',
+  component: require('../../docs/art/v/echarts')
 }]
 
 export default amaNames

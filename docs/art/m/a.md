@@ -8,7 +8,7 @@ npm install amav --S
 `main.js`
 ```javascript
 import Vue from 'vue'
-import {AmaA} from 'amaV'
+import {AmaA} from 'amav'
 Vue.use(AmaA)
 ...
 ```

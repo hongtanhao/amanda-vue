@@ -4,7 +4,7 @@ export default function () {
     name: 'ama-icon',
     template: `<a class="ama-a" ref="icon-a"> 
                 <span ref="ama-icon-span" @click="handleClicked">
-                  <span :class="iconClass" ref="ama-icon">{{ this.icon.fontClass ? "" : icon.unicode }}</span>
+                  <span :class="iconClass" ref="ama-icon">{{ icon.fontClass ? "" : icon.unicode }}</span>
                 </span>
               </a>`,
     props: {
@@ -22,7 +22,7 @@ export default function () {
         if (this.icon.fontClass) {
           return 'ama-icon iconfont ' + this.icon.fontClass
         } else if (this.icon.unicode) {
-          return 'ama-icon iconfont'
+          return 'iconfont'
         } else {
           return ''
         }

@@ -5,15 +5,7 @@
       <br>
     </header>
     <section>
-      <h4>用途</h4>
-      <p>
-        类似于bootstrap的网格系统，主要用于搭建网站骨架
-      </P>
-      <h4>怎么用</h4>
-      <p>
-        <ama-a href="http://localhost:8081/amanda-vue-docs/art/grid.html" text="戳这啊"></ama-a>
-      </P>
-      <h4>效果如下</h4>
+      <h4 class="opt-h4">See my show</h4>
       <div class="grid">
         <p>网格布局</p>
         <ama-row style="margin-top: 15px">
@@ -60,7 +52,20 @@
             <div style="backgroundColor: #eee">right</div>
           </ama-col>
         </ama-row>
-      </div>  
+      </div>
+    </section>
+    <section>
+      <h4 class="opt-h4">See your show</h4>
+      <h4>用途</h4>
+      <p>
+        类似于bootstrap的网格系统，主要用于搭建网站骨架
+      </P>
+      <h4>怎么用</h4>
+      <p>
+        <ama-a href="http://localhost:8081/amanda-vue-docs/art/grid.html" text="戳这啊"></ama-a>
+      </P>
+      <h4>效果如下</h4>
+       
       <h4>组件源码</h4>
       <p>
         <ama-a href="https://github.com/hongtanhao/amanda-vue/blob/dev/src/components/grid/index.js" text="<ama-row>和<ama-col>组件源码"></ama-a>

@@ -5,6 +5,15 @@
       <br>
     </header>
     <section>
+      <h4 class="opt-h4">See my show</h4>
+      <ama-button fill="red" @amaButtonClicked="handleBtn1">删除</ama-button>
+      <ama-button fill="purple" @amaButtonClicked="handleBtn2">修改</ama-button>
+      <ama-button fill="blue" @amaButtonClicked="handleBtn3">增加</ama-button>
+      <ama-button fill="green" @amaButtonClicked="handleBtn3">查询</ama-button>
+      <ama-button @amaButtonClicked="handleBtn3" :disabled="true">禁用</ama-button>
+    </section>
+    <section>
+      <h4 class="opt-h4">See your show</h4>
       <h4>用途</h4>
       <p>
         具有自定义样式的button标签
@@ -13,13 +22,7 @@
       <p>
         <ama-a href="http://localhost:8081/amanda-vue-docs/art/m/button.html" text="戳这啊"></ama-a>
       </P>
-      <h4>效果如下</h4>
       <h4>组件源码</h4>
-      <ama-button fill="red" @amaButtonClicked="handleBtn1">删除</ama-button>
-      <ama-button fill="purple" @amaButtonClicked="handleBtn2">修改</ama-button>
-      <ama-button fill="blue" @amaButtonClicked="handleBtn3">增加</ama-button>
-      <ama-button fill="green" @amaButtonClicked="handleBtn3">查询</ama-button>
-      <ama-button @amaButtonClicked="handleBtn3" :disabled="true">禁用</ama-button>
       <p>
         <ama-a href="https://github.com/hongtanhao/amanda-vue/blob/dev/src/components/button/index.js" text="<ama-button>组件源码"></ama-a>
       </P>

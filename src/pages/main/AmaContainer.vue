@@ -15,7 +15,7 @@
           </ama-navigator>
         </div>
       </ama-col>
-      <ama-col span="14" align="left">
+      <ama-col span="15" align="left">
         <div style="margin: 0 2rem; verticalAlign: center" class="side-nav" ref="ama-com">
           <ama-scroller height="800" scroll="Y" >
             <ama-row>
@@ -66,8 +66,14 @@ export default {
   watch: {
   },
   async created () {
+    this.sideNavs.sort((a, b) => {
+      if (a.alias.charAt(0).toLowerCase() < b.alias.charAt(0).toLowerCase()) {
+        return -1
+      } else {
+        return 1
+      }
+    })
     this.getDoc(this.selectedCom)
-   
   },
   mounted () {
   },
@@ -75,10 +81,15 @@ export default {
     async getDoc (comN) {
       this.isShowLoader = true
       let RQ = RequestHelper(this)
-      this.doc = await RQ.get('/amasVuFile/read', {comN: comN})
+      try {
+        this.doc = await RQ.get('/amasVuFile/read', {comN: comN})
+      } catch (error) {
+        this.isShowLoader = false
+        return
+      }
       setTimeout(() => {
         this.isShowLoader = false
-      }, 500);
+      }, 500)
       console.log('this.doc===', this.doc)
     },
     async handleClick (nav) {
