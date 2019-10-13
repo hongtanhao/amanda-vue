@@ -31,7 +31,7 @@
       <p>
         <ama-a href="https://github.com/hongtanhao/amanda-vue/blob/dev/src/components/icon/index.js" text="<ama-icon-svg>组件源码"></ama-a>
       </P>
-      <div v-demo:foo.a.b="message"></div>
+      <div v-loading="isLoading">hello</div>
     </section>
   </div>
 </template>
@@ -55,7 +55,8 @@ export default {
     return {
       svgs: ['bug', 'chart', 'clipboard', 'dashboard', 'drag', 'edit',
       'email', 'education', 'eye', 'form', 'guide', 'lock'],
-      message: 'demo'
+      message: 'demo',
+      isLoading: true
     }
   },
   computed: {
@@ -63,18 +64,32 @@ export default {
   watch: {
   },
   mounted () {
+    setTimeout(() => {
+      this.message = ''
+      this.isLoading = false
+    }, 5000);
   },
   directives: {
     'demo': {
       bind(el, binding, vnode) {
         var s = JSON.stringify
-        el.innerHTML =
-          'name: '       + s(binding.name) + '<br>' +
-          'value: '      + s(binding.value) + '<br>' +
-          'expression: ' + s(binding.expression) + '<br>' +
-          'argument: '   + s(binding.arg) + '<br>' +
-          'modifiers: '  + s(binding.modifiers) + '<br>' +
-          'vnode keys: ' + Object.keys(vnode).join(', ')
+        // el.innerHTML =
+        //   'name: '       + s(binding.name) + '<br>' +
+        //   'value: '      + s(binding.value) + '<br>' +
+        //   'expression: ' + s(binding.expression) + '<br>' +
+        //   'argument: '   + s(binding.arg) + '<br>' +
+        //   'modifiers: '  + s(binding.modifiers) + '<br>' +
+        //   'vnode keys: ' + Object.keys(vnode).join(', ')
+        let value = el.textContent
+        console.log('binding.value', binding.value)
+        if (binding.value === 'demo') {
+          el.innerHTML = 'dem1'
+        } else {
+          el.innerHTML = 'dem2'
+        }
+      },
+      update (el, binding, vnode) {
+        el.innerHTML = 'dem2'
       }
     }
   },

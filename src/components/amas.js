@@ -74,6 +74,12 @@ let amaNames = [{
   comName: 'echarts',
   alias: 'echarts 数据可视化',
   component: require('../../docs/art/v/echarts')
+},
+{
+  href: 'table',
+  comName: 'table',
+  alias: 'table 格式化表格',
+  component: require('../../docs/art/v/table')
 }]
 
 export default amaNames

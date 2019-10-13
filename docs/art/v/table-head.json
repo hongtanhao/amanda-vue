@@ -1,0 +1,30 @@
+[
+  {
+    "mapToColKey": "id",
+    "text": "id"
+  },
+  {
+    "mapToColKey": "title",
+    "text": "title"
+  },
+  {
+    "mapToColKey": "author",
+    "text": "author"
+  },
+  {
+    "mapToColKey": "content",
+    "text": "content"
+  },
+  {
+    "mapToColKey": "display_time",
+    "text": "display_time"
+  },
+  {
+    "mapToColKey": "image_uri",
+    "text": "image_uri"
+  },
+  {
+    "mapToColKey": "pageviews",
+    "text": "pageviews"
+  }
+]

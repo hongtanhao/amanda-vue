@@ -13,6 +13,7 @@ import loader from '../loader'
 import iconSvg from '../icon-svg'
 import pdf from '../pdf'
 import echarts from '../echarts'
+import table from '../table'
 
 export default {
   grid,
@@ -29,5 +30,6 @@ export default {
   loader,
   iconSvg,
   pdf,
-  echarts
+  echarts,
+  table
 }

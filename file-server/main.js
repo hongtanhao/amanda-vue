@@ -8,6 +8,7 @@ const path = require('path')
 const fs = require('fs')
 require('./common/utils')
 const fr = require('./common/api/FileReader')
+const art = require('./common/api/article')
 const app = new Koa()
 
 // 解析请求体
@@ -55,6 +56,8 @@ const handler = async (ctx, next) => {
 }
 app.use(handler)
 app.use(route.get('/amasVuFile/read', fr.fileReader))
+// http://localhost:9005/amasVuFile/getArts
+app.use(route.get('/amasVuFile/getArts', art.getArticle))
 // lsiten port
 app.listen(9005)
 console.log(`file-server started, please visit ${'localhost:9005'}`)

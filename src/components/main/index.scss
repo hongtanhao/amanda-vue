@@ -1,3 +1,48 @@
+@mixin clearfix {
+  &:before {
+    display: table;
+    content: '';
+    clear: both;
+  }
+
+  &:after {
+    display: table;
+    content: '';
+    clear: both;
+  }
+}
+
+
+@keyframes move1 {
+  33% {
+    background-color: green;
+  }
+
+  66% {
+    background-color: yellow;
+  }
+}
+
+@keyframes move2 {
+  33% {
+    background-color: red;
+  }
+
+  66% {
+    background-color: green;
+  }
+}
+
+@keyframes move3 {
+  33% {
+    background-color: yellow;
+  }
+
+  66% {
+    background-color: red;
+  }
+}
+
 // grid -> ama-col
 .ama-col-base {
   display: inline-block;
@@ -196,51 +241,49 @@
   animation: move3 3s infinite;
 }
 
-@keyframes move1 {
-  33% {
-    background-color: green;
-  }
-
-  66% {
-    background-color: yellow;
-  }
+// ama-table
+.ama-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #eeeeee;
 }
 
-@keyframes move2 {
-  33% {
-    background-color: red;
-  }
-
-  66% {
-    background-color: green;
-  }
+.ama-table th,
+.ama-table-tr,
+.ama-table-tr td {
+  border: 1px solid #eeeeee;
 }
 
-@keyframes move3 {
-  33% {
-    background-color: yellow;
-  }
-
-  66% {
-    background-color: red;
-  }
+.ama-table-tr:hover {
+  background-color: #eeeeee;
+}
+.ama-table-sorter-wrap {
+  position: relative;
+}
+.ama-table-sorter-wrap:after {
+  display: block;
+  content: '';
+  clear: both;
+  overflow: hidden;
+}
+.ama-table-sorter {
+  position: absolute;
+}
+.ama-table-sorter-btn {
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #f78989;
+  margin: 10px;
+  font-size: 14px;
+  padding: 2px 8px;
+  text-align: center;
+  cursor: pointer;
 }
 
 // ama-dom-to-pdf
-@mixin clearfix {
-  &:before {
-    display: table;
-    content: '';
-    clear: both;
-  }
-
-  &:after {
-    display: table;
-    content: '';
-    clear: both;
-  }
-}
-
 .ama-dom-to-pdf-main-article {
   padding: 20px;
   margin: 0 auto;
