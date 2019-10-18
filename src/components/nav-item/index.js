@@ -23,11 +23,14 @@ export default function () {
     methods: {
       handleClick (e) {
         console.log('e', e.target)
-        let domA = [...document.getElementsByClassName('ama-a')]
-        for (let i = 0; i < domA.length; i++) {
-          domA[i].style.color = '#2c3e50'
+        let item = this.$refs['ama-nav-item']
+        let domItem = [...document.getElementsByClassName('ama-item')]
+        for (let i = 0; i < domItem.length; i++) {
+          domItem[i].style.backgroundColor = ''
+          domItem[i].style.color = '#2c3e50'
         }
-        e.target.style.color = 'red'
+        item.style.color = 'purple !important'
+        item.style.backgroundColor = 'hsla(177, 88%, 27%, 0.5)'
         console.log('[clicked current Item is]', this.item)
         this.$emit('amaNavItemClick', this.item.id)
       }

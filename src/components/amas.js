@@ -80,6 +80,12 @@ let amaNames = [{
   comName: 'table',
   alias: 'table 格式化表格',
   component: require('../../docs/art/v/table')
+},
+{
+  href: 'drag-item',
+  comName: 'drag-item',
+  alias: 'drag-item 拖拽项',
+  component: require('../../docs/art/v/drag-item')
 }]
 
 export default amaNames

@@ -1,7 +1,7 @@
 import create from '@/utils/create'
 export default function () {
   create('ama-loader', {
-    name: 'ama-icon',
+    name: 'ama-loader',
     template: `<div class="ama-loader" ref="ama-loader"> 
                 <ul>
                  <li></li><li></li><li></li>

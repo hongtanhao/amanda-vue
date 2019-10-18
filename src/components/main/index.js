@@ -14,6 +14,7 @@ import iconSvg from '../icon-svg'
 import pdf from '../pdf'
 import echarts from '../echarts'
 import table from '../table'
+import dragItem from '../drag-item'
 
 export default {
   grid,
@@ -31,5 +32,6 @@ export default {
   iconSvg,
   pdf,
   echarts,
-  table
+  table,
+  dragItem
 }

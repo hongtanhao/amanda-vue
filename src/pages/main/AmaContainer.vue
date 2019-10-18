@@ -130,7 +130,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .side-nav {
-  border: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   border-radius: 8px;
   padding: 1rem .5rem;
   background-color:transparent;

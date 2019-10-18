@@ -64,8 +64,6 @@
       <p>
         <ama-a href="http://localhost:8081/amanda-vue-docs/art/grid.html" text="戳这啊"></ama-a>
       </P>
-      <h4>效果如下</h4>
-       
       <h4>组件源码</h4>
       <p>
         <ama-a href="https://github.com/hongtanhao/amanda-vue/blob/dev/src/components/grid/index.js" text="<ama-row>和<ama-col>组件源码"></ama-a>
