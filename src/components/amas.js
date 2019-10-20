@@ -5,10 +5,10 @@ let amaNames = [{
   component: require('../../docs/art/v/a')
 },
 {
-  href: 'nav-item',
-  comName: 'nav-item',
-  alias: 'nav-item 导航项容器',
-  component: require('../../docs/art/v/nav-item')
+  href: 'nav-container',
+  comName: 'nav-container',
+  alias: 'nav-container 导航容器',
+  component: require('../../docs/art/v/nav-container')
 },
 {
   href: 'divider',
@@ -82,10 +82,16 @@ let amaNames = [{
   component: require('../../docs/art/v/table')
 },
 {
-  href: 'drag-item',
-  comName: 'drag-item',
-  alias: 'drag-item 拖拽项',
-  component: require('../../docs/art/v/drag-item')
+  href: 'drag-container',
+  comName: 'drag-container',
+  alias: 'drag-container 可拖拽可放缩容器',
+  component: require('../../docs/art/v/drag-container')
+},
+{
+  href: 'video',
+  comName: 'video',
+  alias: 'video h5视频播放器美化版',
+  component: require('../../docs/art/v/video')
 }]
 
 export default amaNames

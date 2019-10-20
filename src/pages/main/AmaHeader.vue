@@ -6,14 +6,14 @@
       </ama-col>
       <ama-col span="11" align="right">
         <ama-navigator>
-          <ama-nav-item v-for="(item, index) in navs"
+          <ama-nav-container v-for="(item, index) in navs"
             :key="index"
             :item="item"
             orientation="horizontal"
             @amaNavItemClick="handleClick">
             <ama-divider width="100%" height="20" type='block'></ama-divider>
             <ama-icon :icon="item.icon"></ama-icon>
-          </ama-nav-item>
+          </ama-nav-container>
         </ama-navigator>
       </ama-col>
    </ama-row>

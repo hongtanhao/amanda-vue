@@ -5,13 +5,13 @@
       <ama-col offset="2" span="3.5" align="left">
         <div class="side-nav">
           <ama-navigator>
-            <ama-nav-item v-for="(item, index) in sideNavs"
+            <ama-nav-container v-for="(item, index) in sideNavs"
               :key="index"
               :item="item"
               orientation="vertical"
-              @amaNavItemClick="handleClick(item)">
+              @amaNavItemClick="handleClick(item)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               <ama-a href="#" :text="item.alias"></ama-a>
-            </ama-nav-item>
+            </ama-nav-container>
           </ama-navigator>
         </div>
       </ama-col>

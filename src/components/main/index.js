@@ -1,7 +1,7 @@
 import grid from '../grid'
 import a from '../a'
 import navigator from '../navigator'
-import navItem from '../nav-item'
+import navContainer from '../nav-container'
 import icon from '../icon'
 import divider from '../divider'
 import progress from '../progress'
@@ -14,13 +14,14 @@ import iconSvg from '../icon-svg'
 import pdf from '../pdf'
 import echarts from '../echarts'
 import table from '../table'
-import dragItem from '../drag-item'
+import dragContainer from '../drag-container'
+import video from '../video'
 
 export default {
   grid,
   a,
   navigator,
-  navItem,
+  navContainer,
   icon,
   divider,
   progress,
@@ -33,5 +34,6 @@ export default {
   pdf,
   echarts,
   table,
-  dragItem
+  dragContainer,
+  video
 }

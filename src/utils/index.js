@@ -98,7 +98,36 @@ export function formatTime(time, option) {
     )
   }
 }
-
+/**
+ * 
+ * @param {*} seconds 
+ */
+export function formatSecondsToTime(seconds) {
+  var h = parseInt(seconds / 3600, 10)
+  var m = parseInt(seconds % 3600 / 60, 10)
+  var s = parseInt(seconds % 60, 10)
+  var time = ''
+  if (h == 0) {
+    time += ''
+  } else {
+    time += h
+  }
+  if (m >= 10) {
+    time += m + ":"
+  } else if (m > 0) {
+    time += '0' + m + ':'
+  } else {
+    time += '00:'
+  }
+  if (s >= 10) {
+    time += s
+  } else if (s > 0) {
+    time += '0' + s
+  } else {
+    time += '00'
+  }
+  return time
+}
 /**
  * @param {string} url
  * @returns {Object}

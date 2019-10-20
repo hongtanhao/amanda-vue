@@ -40,7 +40,9 @@ module.exports = {
               'tabs',
               'button',
               'pdf',
-              'echarts'
+              'echarts',
+              'drag-container',
+              'nav-container'
           ]
       }
   }
