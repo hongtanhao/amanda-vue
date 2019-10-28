@@ -52,7 +52,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .GRskin {
-  background-color: $GRbackgroundColor;
+  background-color: $MLbackgroundColor;
   line-height: $HeaderH;
 }
 </style>

@@ -8,7 +8,7 @@
       <h4 class="opt-h4">See my show</h4>
 
       <ama-drag-container>
-        <ama-video width="100%" height="100%"></ama-video>
+        <ama-video src="http://localhost:9005/static/videos/DreamItPossible.mp4" width="100%" height="100%"></ama-video>
       </ama-drag-container>
         
     </section>

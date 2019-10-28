@@ -5,7 +5,7 @@
         id="html5VideoPlayer"
         width="100%"
         height="100%"
-        src="./DreamItPossible.mp4"
+        :src="src"
         loop="loop"
         ref="myVideo"
         controls
@@ -64,6 +64,9 @@ export default {
       type: String
     },
     width: {
+      type: String
+    },
+    src: {
       type: String
     }
   },
